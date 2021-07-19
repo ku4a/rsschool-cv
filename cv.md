@@ -3,12 +3,13 @@
 **Gender:** Male
 **Nationality:** Belarusian
 
+## Contacts
 **Mobile:** (+375) 297916884
 **Email address:** [7916884@gmail.com](mailto:7916884@gmail.com)
 **Skype:** gomer-ku4a
 **Viber:** +375297916884
 
-## WORK EXPERIENCE
+## Work experience
 * **Web programmer**
 Center for implementation of scientific and technical developments
 14/02/2005  – 31/07/2007
@@ -27,18 +28,59 @@ Website development and support ([vb.by](https://vb.by)). Digital infrastructure
 Grodno, Belarus
 Website development and support.
 
-## EDUCATION AND TRAINING
+## Education
 
 * **Brest State Technical University**
 * Engineer in Information Technologies
 01/09/2000  – 30/06/2005
 267 Moskovskaya str., Brest, Belarus
 
-## LANGUAGE SKILLS
+## Language skills
+
 #### Mother tongue(s)
 * Russian
 * Belarusian
-####
+
  #### Other language(s)
 * English (B2)
 * Polish (B2)
+
+## Skills
+
+### Programming languages
+
+* PHP
+* SQL
+*  jQuery
+* JavaScript
+* HTML 5
+* Ajax
+* CSS (SASS LESS)
+
+### Web development
+
+* phpStorm
+* MySQL
+* Unix Linux und Unix Shell
+* Git
+* Apache
+* Nginx
+* Adobe Dreamwaver
+* Adobe Photoshop
+* Google Analytics
+* MAMPP
+* Navicat
+* WordPress
+
+### Operating Systems
+
+* Windows
+* Mac OS
+* Linux
+* iOS
+
+### Office programs
+
+* Microsoft Word
+* Microsoft Exel
+* Microsoft PowerPoint
