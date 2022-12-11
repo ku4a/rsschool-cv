@@ -23,7 +23,7 @@ Brest, Belarus
 Website development and support ([vb.by](https://vb.by)). Digital infrastructure support. Newspaper layout (Adobe InDesign).
 
 * **Web programmer**
-[priminer.eu](http://priminer.eu), [motoplanet.by](https://motoplanet.by), [moto-planet.ru](https://moto-planet.ru), [dragonstar.eu](), [kakest.by](https://www.kakest.by)
+[priminer.eu](http://priminer.eu), [motoplanet.by](https://motoplanet.by), [moto-planet.ru](https://moto-planet.ru), [dragonstar.eu](), [kakest.by](https://www.kakest.by), [remontholod.by](https://remontholod.by), [vending.by](https://vending.by)
 03/10/2014  – Current
 Grodno, Belarus
 Website development and support.
