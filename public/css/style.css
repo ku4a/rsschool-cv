@@ -8,6 +8,7 @@ html {
     font-style: normal;
     line-height: 1.75em;
     color: #666;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -30,8 +31,23 @@ a:hover {
     width: 960px;
 }
 
+.navi {
+    margin: 35px 300px 0 0;
+    position: relative;
+    text-align: right;
+}
+
+.navi ul {
+    display: inline;
+}
+
+.navi li {
+    display: inline;
+    margin-left: 30px;
+}
+
 .row {
-    margin-top: 5%;
+    margin-top: 3%;
     float: left;
     width: 100%;
 }
@@ -111,13 +127,14 @@ h1 {
 .col-right {
     float: left;
     width: 60%;
+    margin-bottom: 40px;
 }
 
 .col-right-wrapper {
     padding-left: 50px;
 }
 
-.about, .contacts, .work, .education, .languages, skills {
+.about, .contacts, .work, .education, .languages, .skills {
     float: left;
     width: 100%;
 }
