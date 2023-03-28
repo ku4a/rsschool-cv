@@ -174,7 +174,7 @@ class mail
     {
         $to = $email_to;
         $subject = self::mime_header_encode($subject);
-        $from = self::mime_header_encode(self::$name) . ' < . self::$email . >';
+        $from = self::mime_header_encode(self::$name) . self::$email;
         if (self::$data_charset != self::$send_charset) {
             $body = iconv(self::$data_charset, self::$send_charset, $body);
         }
