@@ -12,6 +12,13 @@
 <body>
 <div class="wrapper">
     <main>
+        <nav class="navi">
+            <ul class="">
+                <li><a href="#info">Info</a></li>
+                <li><a href="#code-example">Code example</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
         <div class="row">
             <div class="photo">
                 <img src="public/img/photo.jpg" alt="My photo">
@@ -31,7 +38,7 @@
         </div>
         <div class="row">
             <div class="col-left">
-                <section>
+                <section id="info">
                     <div class="about">
                         <div class="wrapper-about">
                             <i class="far fa-address-card">&nbsp;</i>
@@ -52,10 +59,8 @@
                         <h2>Contacts</h2>
                         <div>
                             <ul>
-                                <li><b>Mobile</b>: +375 29 791-68-84</li>
+                                <li><b>Discord</b>: <a target="_blank" href="https://discordapp.com/users/481579028311048194/">Aliaksandr Fiarsovich (@ku4a)</a></li>
                                 <li><b>Email</b>: <a href="mailto:7916884@gmail.com">7916884@gmail.com</a></li>
-                                <li><b>Skype</b>: gomer-ku4a</li>
-                                <li><b>Viber</b>: +375297916884</li>
                             </ul>
                         </div>
                     </div>
@@ -128,10 +133,11 @@
                                         <a href="http://priminer.eu" target="_blank">priminer.eu</a>,
                                         <a href="https://motoplanet.by" target="_blank">motoplanet.by</a>,
                                         <a href="https://moto-planet.ru" target="_blank">moto-planet.ru</a>,
-                                        <a href="http://dragonstar.eu" target="_blank">dragonstar.eu</a>,
+                                        <a href="https://dostavka24.pl" target="_blank">dostavka24.pl</a>,
                                         <a href="https://www.kakest.by" target="_blank">kakest.by</a>,
                                         <a href="https://holodgrodno.by" target="_blank">holodgrodno.by</a>,
                                         <a href="https://remontholod.by" target="_blank">remontholod.by</a>,
+                                        <a href="https://holodgrodno.by" target="_blank">holodgrodno.by</a>,
                                         <a href="https://vending.by" target="_blank">vending.by</a>).
                                     </div>
                                     <div class="locality">Grodno, Belarus</div>
@@ -143,7 +149,48 @@
             </div>
         </div>
         <div class="row">
-            <section>
+            <section id="code-example">
+                <div class="code">
+                    <i class="fas fa-code">&nbsp;</i>
+                    <h2>Code example</h2>
+                    <h3>PHP</h3>
+                    <pre>
+class mail
+{
+    static $data_charset = 'UTF-8';
+    static $send_charset = 'UTF-8';
+    static $name = 'test.bypl';
+    static $email = 'info@dostavka24.pl';
+
+    static function mime_header_encode($str)
+    {
+        if (self::$data_charset != self::$send_charset) {
+            $str = iconv(self::$data_charset, self::$send_charset, $str);
+        }
+        return '=?' . self::$send_charset . '?B?' . base64_encode($str) . '?=';
+    }
+
+    static function send($email_to, $subject, $body, $html = FALSE)
+    {
+        $to = $email_to;
+        $subject = self::mime_header_encode($subject);
+        $from = self::mime_header_encode(self::$name) . ' <' . self::$email . '>';
+        if (self::$data_charset != self::$send_charset) {
+            $body = iconv(self::$data_charset, self::$send_charset, $body);
+        }
+        $headers = "From: $from\r\n";
+        $type = ($html) ? 'html' : 'plain';
+        $headers .= "Content-type: text/$type; charset=" . self::$send_charset . "\r\n";
+        $headers .= "Mime-Version: 1.0\r\n";
+        return mail($to, $subject, $body, $headers);
+    }
+}
+                    </pre>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section id="skills">
                 <div class="skills">
                     <div>
                         <i class="fas fa-book-dead">&nbsp;</i>
@@ -186,7 +233,7 @@
     </main>
     <footer>
         <nav>
-            <div class="footer-left">2022<br><a href="https://github.com/ku4a" target="_blank">Github ku4a</a></div>
+            <div class="footer-left">2023<br><a href="https://github.com/ku4a" target="_blank">Github ku4a</a></div>
             <div class="footer-right"><a href="https://rs.school/js/" target="_blank">
                 <img src="https://rs.school/images/rs_school_js.svg" alt="RS School logo" width="100" height="100"></a>
             </div>

@@ -8,6 +8,7 @@ html {
     font-style: normal;
     line-height: 1.75em;
     color: #666;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -28,6 +29,21 @@ a:hover {
 .wrapper {
     margin: 0 auto;
     width: 960px;
+}
+
+.navi {
+    position: absolute;
+    top: 35px;
+    left: 625px;
+}
+
+.navi ul {
+    display: inline;
+}
+
+.navi li {
+    display: inline;
+    margin-left: 30px;
 }
 
 .row {
@@ -111,6 +127,7 @@ h1 {
 .col-right {
     float: left;
     width: 60%;
+    margin-bottom: 50px;
 }
 
 .col-right-wrapper {
